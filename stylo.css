@@ -1,0 +1,143 @@
+@font-face {
+    font-family:ethnocentric;
+    src: url(ethnocentric\ rg.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    width: 100%;
+    
+}
+/*cabecalio e endereço e zap*/
+.cabecalio{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(50,50,50);}
+.cabecalioesquerdo{
+    display: flex;
+    width: 230px;
+    align-items: center;}
+.icolocalizacao{
+    width: 35px;}
+p#ender{
+    width: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(50,50,50);}
+.cabecaliodireito{
+    width: 180px;}
+a{
+    text-decoration: none;
+    color: rgb(50,50,50);
+    transition: 0.4s;}
+h2#zap:hover{
+    background-color: rgba(0, 236, 0, 0.678);}
+h2#zap{
+    padding: 3px;
+    border-radius: 10px;
+    border: 1px solid rgb(50,50,50);
+    width: 110px;
+    transition: 0.4s; 
+    margin: 2px;
+    font-size: 20px;
+    text-align: center;}
+/*menu lista e logotipo*/
+.menu{
+    background-image: linear-gradient(90deg,rgba(0,0,0,.5),rgba(0,0,0,.5));
+    box-shadow: 0px 2px 2px black;}
+.fundomenu{
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;}
+.marca{
+    width: 35%; 
+    display: inline-flex;
+    align-items: center;}
+.nomemarca{
+    font-family:ethnocentric;
+    color: rgb(192, 192, 192);
+    font-size: 160%;
+    text-shadow: 1px 1px 3px black;}
+.imgclass{
+    position: relative;
+    width: 60px;   
+    height: 60px;}
+.imgmarca{
+    position: absolute;
+    width: 60px;}
+img#imgengrenage{
+    animation-name: roda;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;}
+@keyframes roda {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}}
+.ulmenu{
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;}
+    
+.limenu{
+    list-style: none;
+    padding: 5px;}
+.amenu{
+    text-transform: uppercase;
+    color: white;
+    font-size: 15px;
+    padding: 2px;
+    font-weight: bold;}
+@media(max-width:500px) {
+ .fundomenu{width: 100%;}
+ .ulmenu{display:none}
+
+}
+.amenu:hover{
+    background-color: rgba(0, 236, 0, 0.678);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: black;}
+/*menu humburguer */
+@media(max-width:500px){
+    .hamburguer{display: none;}
+
+}
+.hamburguer{
+    width: 35px;
+    height: 35px;
+    background-color:rgb(192, 192, 192);
+    display:block;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 8px;
+    
+    
+    
+}
+.hamb{
+    width: 30px;
+    height: 4px;
+    background-color: darkgreen;
+    border-radius: 20px;
+    margin-top: 1px;
+}
+div#hamb2{
+    margin-right: 7px;
+}
+div#hamb1{
+    margin-left: 7px;
+}
+div#hamb3{
+    margin-left: 7px;
+}
